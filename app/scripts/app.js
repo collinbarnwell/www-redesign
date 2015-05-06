@@ -10,18 +10,18 @@
  */
 angular
   .module('epicWwwApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+      'ngAnimate',
+      'ngCookies',
+      'ngResource',
+      'ngRoute',
+      'ngSanitize',
+      'ngTouch'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
+    .config(function ($routeProvider) {
+      $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/projects.html',
+        controller: 'ProjectsCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
