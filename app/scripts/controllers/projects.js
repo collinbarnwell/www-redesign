@@ -7,23 +7,23 @@
  * # MainCtrl
  * Controller of the epicWwwApp
  */
-angular.module('epicWwwApp', [])
-  .controller('ProjectsCtrl', function ($scope) {
+angular.module('epicWwwApp')
+.controller('ProjectsCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+        'HTML5 Boilerplate',
+        'AngularJS',
+        'Karma'
     ];
+
+    console.log('aiaiailmao')
 
     this.modalOpen = false;
 
-    this.openModal = function() {
-      this.modalOpen = true;
+    $scope.openModal = function() {
+        this.modalOpen = true;
     };
 
-    this.modalOpen = function() {
-      return this.modalOpen;
+    $scope.modalOpen = function() {
+        return this.modalOpen;
     };
-
-
-  });
+});
