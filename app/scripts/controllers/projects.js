@@ -24,9 +24,4 @@ angular.module('epicWwwApp')
     $scope.closeModal = function() {
         this.modalOpen = false;
     };
-
-    // $scope.modalOpen = function() {
-    //     return this.modalOpen;
-    // };
-
 });
