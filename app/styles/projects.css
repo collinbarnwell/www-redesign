@@ -1,0 +1,63 @@
+body {
+    font-family: "Lato",Helvetica,sans-serif;
+}
+
+.epic-projects-btn {
+    width:20em;
+    height:10em;
+    margin-top:2em;
+}
+
+.translucent-btn {
+    border-radius:1.5em;
+    border-width:4px;
+    border-style:solid;
+    border-color:red;
+    font-weight:bolder;
+    background-color:rgba(77,77,77,.5);
+}
+
+.translucent-btn:hover {
+    border-color:black;
+    background-color:rgba(77,77,77,.25);
+}
+
+.epic-project {
+    width:40%;
+    height:20em;
+    background-color:red;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -10em;
+    margin-left: -20%;
+    z-index: 50;
+}
+
+.bottom-banner {
+    position: relative;
+    width:100%;
+    height:2em;
+    top:17em;
+    bottom-margin:1em;
+    background-color:white;
+    z-index:51;
+    text-align:center;
+    font-weight:bold;
+}
+
+.darkClass 
+{
+    background-color: white;
+    filter:alpha(opacity=50); /* IE */
+    opacity: 0.5; /* Safari, Opera */
+    -moz-opacity:0.50; /* FireFox */
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
