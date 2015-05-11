@@ -15,15 +15,13 @@ angular.module('epicWwwApp')
         'Karma'
     ];
 
-    console.log('aiaiailmao')
-
-    this.modalOpen = false;
+    $scope.modalOpen = false;
 
     $scope.openModal = function() {
         this.modalOpen = true;
     };
 
-    $scope.modalOpen = function() {
-        return this.modalOpen;
+    $scope.closeModal = function() {
+        this.modalOpen = false;
     };
 });

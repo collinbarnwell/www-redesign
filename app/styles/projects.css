@@ -17,6 +17,12 @@ body {
     background-color:rgba(77,77,77,.5);
 }
 
+.projects-btn-label {
+    display:inline-block;
+    margin: 1em;
+    font-weight: bold;
+}
+
 .translucent-btn:hover {
     border-color:black;
     background-color:rgba(77,77,77,.25);
@@ -60,4 +66,27 @@ body {
     position:absolute;
     top: 0px;
     left: 0px;
+}
+
+.closex
+{
+    margin:1em;
+}
+
+.active 
+{
+    z-index: 100;
+}
+
+.social-medias
+{
+    margin: 5em auto;
+    height: 5em;
+    text-align: center;
+
+}
+
+.social-media-img
+{
+    height: inherit;
 }

@@ -3,16 +3,26 @@
 
 
 <div class="container" id="one-hunna">
-  <div class="translucent-btn epic-projects-btn pull-right" ng-click="openModal" ng-hide="modalOpen">
-    <h1 class="text-center">EPIC PROJECTS</h1>
+  <div class="translucent-btn epic-projects-btn pull-right" ng-click="openModal()" ng-hide="modalOpen">
+    <i class="fa fa-bars fa-2x"></i><h3 class="projects-btn-label">| EPIC PROJECTS</h3>
 </div>
 </div>
 
-<h1>HAI</h1>
-
-<div class="epic-project" ng-show="modalOpen">
-  <div class="bottom-banner">Project Pitch</div>
+<div class="social-medias" ng-show="modalOpen">
+    <img class="social-media-img" src="../images/mail-small.png">
+    <img class="social-media-img" src="../images/facebook-small.png">
+    <img class="social-media-img" src="../images/instagram-small.png">
+    <img class="social-media-img" src="../images/twitter-small.png">
 </div>
+
+<div class="epic-project active" ng-show="modalOpen">
+    <div class="close closex" ng-click="closeModal()">
+        <i class="fa fa-times fa-2x"></i>
+    </div>
+
+    <div class="bottom-banner">Project Pitch</div>
+</div>
+
 <div class="epic-project" ng-show="modalOpen">
   <div class="bottom-banner">NUVC</div>
 </div>
