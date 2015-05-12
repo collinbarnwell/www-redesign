@@ -24,4 +24,8 @@ angular.module('epicWwwApp')
     $scope.closeModal = function() {
         this.modalOpen = false;
     };
+
+    $scope.projects = [
+        { name: "NUVC" }
+    ];
 });
