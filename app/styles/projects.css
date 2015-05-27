@@ -2,17 +2,25 @@ body {
     font-family: "Lato",Helvetica,sans-serif;
 }
 
+img {
+    height: inherit;
+}
+
 .epic-projects-btn {
-    width:20em;
-    height:10em;
     margin-top:2em;
 }
 
+.my-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 .translucent-btn {
-    border-radius:1.5em;
-    border-width:4px;
+    border-width:2px;
     border-style:solid;
-    border-color:red;
+    border-color:black;
     font-weight:bolder;
     background-color:rgba(77,77,77,.5);
 }
@@ -20,25 +28,30 @@ body {
 .projects-btn-label {
     display:inline-block;
     margin: 1em;
-    font-weight: bold;
 }
 
 .translucent-btn:hover {
-    border-color:black;
     background-color:rgba(77,77,77,.25);
+}
+
+#projects-menu-icon {
+    position:relative;
+    margin-left: 1em;
+    top:.1em;
+    left: .2em;
 }
 
 .epic-project {
     width: 50%;
-    height:40%;
+    height:25em;
     background-color: rgb(209, 209, 206);
     top: 55%;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin-top: -100px;
     margin-top: -10em;
     position: fixed;
-    z-index: 50;
-    
+    z-index: 20;
+    padding-bottom:1em;
 }
 
 .epic-project img {
@@ -48,16 +61,33 @@ body {
     margin-right: auto;
 }
 
+.current {
+    left: 25%;
+    z-index: 22;
+}
+
+.current ~.epic-project {
+    right: 25%;
+    z-index: 21;
+}
+
+.current +.epic-project {
+    left:50%;
+    z-index: 21;
+}
+
 .bottom-banner {
     position: relative;
     width:100%;
     height:2em;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
     bottom-margin:1em;
-    background-color:white;
-    z-index:51;
     text-align:center;
     font-weight:bold;
+    display: block;
+    color: white;
+    font-size:2em;
+    text-align: center;
 }
 
 .darkClass 
@@ -78,12 +108,11 @@ body {
 
 .closex
 {
-    margin:1em;
-}
-
-.active 
-{
-    z-index: 100;
+    position: absolute;
+    margin-right:1em;
+    display: inline;
+    right: 0%;
+    z-index: 52;
 }
 
 .social-medias
@@ -98,3 +127,34 @@ body {
 {
     height: inherit;
 }
+
+.projects-img-container
+{
+    height: 80%;
+    position: relative;
+}
+
+.project-shift-arrow.fa-chevron-left {
+    margin: .5em;
+    position:absolute;
+    bottom:35%;
+    left:0%;
+}
+
+.project-shift-arrow.fa-chevron-right {
+    margin: .5em;
+    position:absolute;
+    bottom:35%;
+    right:0%;
+}
+
+/*.overlay {
+    height: inherit;
+    width: 5em;
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-radius: 50%;
+    top:50%;
+    left:5em;
+}*/

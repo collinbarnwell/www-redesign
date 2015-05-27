@@ -4,7 +4,7 @@
 
 <div class="container" id="one-hunna">
   <div class="translucent-btn epic-projects-btn pull-right" ng-click="openModal()" ng-hide="modalOpen">
-    <i class="fa fa-bars fa-2x"></i><h3 class="projects-btn-label">| EPIC PROJECTS</h3>
+    <i class="fa fa-bars fa-2x" id="projects-menu-icon"></i><h3 class="projects-btn-label">| EPIC PROJECTS</h3>
 </div>
 </div>
 
@@ -15,10 +15,25 @@
     <img class="social-media-img" src="../images/twitter-small.png">
 </div>
 
+<div>
 
-<div ng-repeat="project in projects" class="epic-project active" ng-show="modalOpen">
-    <div class="close closex" ng-click="$parent.closeModal()">
-        <i class="fa fa-times fa-2x"></i>
+
+
+</div>
+
+
+<div class="projects-container">
+    <div ng-repeat="project in projects" style="background-color:{{project.color}}" class="epic-project" ng-class="currentProjectClass(project)" ng-show="modalOpen">
+        <div class="my-container">
+            <div ng-show="$parent.isCurrent(project)" class="close closex" ng-click="$parent.closeModal()">
+                <i class="fa fa-times fa-2x"></i>
+            </div>
+            <div class="projects-img-container">
+                <img ng-src="{{project.image}}">
+            </div>
+            <div class="bottom-banner">{{project.name}}</div>
+            <i ng-show="$parent.isCurrent(project)" class="fa fa-chevron-left fa-4x project-shift-arrow close" ng-click="$parent.displayMinus()"></i>
+            <i ng-show="$parent.isCurrent(project)" class="fa fa-chevron-right fa-4x project-shift-arrow close" ng-click="$parent.displayPlus()"></i>
+        </div>
     </div>
-    <div class="bottom-banner">NUVC</div>
 </div>
